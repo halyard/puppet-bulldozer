@@ -1,0 +1,16 @@
+server:
+  address: "0.0.0.0"
+  port: 8080
+logging:
+  text: false
+  level: info
+
+github:
+  web_url: "https://github.com"
+  v3_api_url: "https://api.github.com"
+  app:
+    integration_id: <%= @github_integration_id %>
+    webhook_secret: <%= @github_webhook_secret %>
+    private_key: |
+<%= @github_private_key.lines.map { |x| "      " + x }.join("\n") %>
+
