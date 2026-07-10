@@ -8,9 +8,6 @@
 # @param github_integration_id sets the integration ID for the GitHub app
 # @param github_webhook_secret sets the webook secret for validating webhooks
 # @param github_private_key sets the private key for the GitHub app
-# @param github_client_id sets the Client ID for OAuth
-# @param github_client_secret sets the Client Secret for OAuth
-# @param session_key sets the cookie encryption key
 # @param container_ip sets the IP address for the docker container
 class bulldozer (
   String $datadir,
