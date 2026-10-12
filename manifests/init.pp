@@ -33,6 +33,7 @@ class bulldozer (
   docker::container { 'bulldozer':
     image => 'palantirtechnologies/bulldozer:latest',
     args  => [
+      "--ip ${container_ip}",
       "-v ${datadir}:/secrets",
     ],
     cmd   => '',
